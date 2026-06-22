@@ -1,0 +1,42 @@
+name: Homebrew install problem
+description: Report a problem installing or upgrading Prilog with Homebrew.
+title: "brew: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened?
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: brew install prilog-ai/tap/prilog
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Paste the relevant terminal output.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: macOS 15 arm64, macOS 14 Intel, Linux x86_64
+    validations:
+      required: true
+  - type: input
+    id: brew-version
+    attributes:
+      label: Homebrew version
+      placeholder: brew --version
+    validations:
+      required: true
